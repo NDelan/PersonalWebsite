@@ -20,13 +20,15 @@
     --text-color: hsl(var(--hue-color), 70%, 96%);
     --hue-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /* Fonts and typography */
     --body-font: font-family: 'Poppins', sans-serif;
 
     /* 5rem = 8px, 1rem = 16px, 1.5rem = 24px */
     --big-font-size: 2rem;
-    --h1-font-size: 11.5rem;
+    --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .983rem;
@@ -55,7 +57,7 @@
 }
 
     /* Font size for large devices */
-@media screen and (min-width: 968px;){
+@media screen and (min-width: 968px){
         :root {
             --big-font-size: 3rem;
             --h1-font-size: 2.25rem;
@@ -108,12 +110,13 @@ img{
     height: auto;
 }
 /* ========== REUSABLE CSS CLASSES ========== */
-/* .section{
+.section{
     padding: 2rem 0 4rem;
-} */
+} 
 
 .section__title{
     font-size: var(--h1-font-size);
+    color: var(--title-color);
 }
 
 .section__subtitle{
@@ -136,5 +139,41 @@ img{
     display: grid;
     gap: 1.5rem;
 }
-/* =========== NAV ========== * /
 
+.header {
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: var(--z-fixed);
+
+}
+
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo,.nav_toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav_logo:hover{
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 767px){
+    .nav_menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+
+    }
+}
