@@ -140,15 +140,7 @@ img{
     gap: 1.5rem;
 }
 
-.header {
-    width: 100%;
-    background-color: var(--body-color);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: var(--z-fixed);
 
-}
 
 .nav {
     max-width: 968px;
@@ -186,10 +178,7 @@ img{
     }
 }
 
-.nav_list {
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-}
+
 .nav_link{
     display: flex;
     flex-direction: column;
