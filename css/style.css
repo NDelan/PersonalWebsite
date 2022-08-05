@@ -140,7 +140,15 @@ img{
     gap: 1.5rem;
 }
 
+.header {
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: var(--z-fixed);
 
+}
 
 .nav {
     max-width: 968px;
@@ -178,7 +186,10 @@ img{
     }
 }
 
-
+.nav_list {
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
 .nav_link{
     display: flex;
     flex-direction: column;
@@ -186,4 +197,24 @@ img{
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
+}
+
+.nav_link:hover{
+    color: var(--first-color);
+}
+
+.nav_icon{
+    font-size: 1.2rem;
+}
+
+.nav_close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav_close:hover{
+    color: var(--first-color);
 }
