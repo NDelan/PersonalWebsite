@@ -176,7 +176,7 @@ img{
     .nav_menu{
         position: fixed;
         bottom: 0;
-        left: 0;
+        left: -100%;
         width: 100%;
         background-color: rgba(0,0,0,.15);
         padding: 2rem 1.5rem 4rem;
@@ -218,3 +218,5 @@ img{
 .nav_close:hover{
     color: var(--first-color);
 }
+
+/* show menu */
