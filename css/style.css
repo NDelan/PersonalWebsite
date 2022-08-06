@@ -245,3 +245,9 @@ img{
     width: 200px;
     fill: var(--first-color);
 }
+.home_blob-img{
+    width: 170px;
+}
+.home_data{
+    grid-column: 1/3;
+}
