@@ -251,3 +251,27 @@ img{
 .home_data{
     grid-column: 1/3;
 }
+.home_title{
+    font-size: var(--big-font-size);
+}
+.home_subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+.home_description{
+    margin-bottom: var(--mb-2);
+}
+/* .home_scroll{ */
+    /* display: none */
+.home_scroll-button{
+    color: var(--first-color);
+    transition: 30s;
+}
+.home_scroll-button:hover{
+    transform: translateY(0.25rem);
+}
+.home_scroll-mouse{
+    font-size: 2rem;
+}
